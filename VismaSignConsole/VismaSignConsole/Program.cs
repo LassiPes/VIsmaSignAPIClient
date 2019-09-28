@@ -19,7 +19,7 @@ namespace VismaSignConsole
 
 
 
-            var documentUri = client.DocumentCreate(new DocumentInfo() { document = new DocumentInfo.DocumentData() { name = "Test doc" } });
+            var documentUri = client.DocumentCreate(new Document() { document = new Document.DocumentData() { name = "Test doc" } });
 
             WebClient webClient = new WebClient();
             byte[] fileContent = webClient.DownloadData("https://sign.visma.net/empty.pdf");
